@@ -1,4 +1,4 @@
-package org.fresh.kyu6.meeting;
+package org.fresh.kata.kyu6.meeting;
 
 import java.util.Arrays;
 import java.util.Collections;
