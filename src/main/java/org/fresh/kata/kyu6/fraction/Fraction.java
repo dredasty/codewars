@@ -1,5 +1,8 @@
 package org.fresh.kata.kyu6.fraction;
 
+/**
+ * https://www.codewars.com/kata/fractions-class/train/java
+ */
 public class Fraction implements Comparable<Fraction> {
 
     private final long top;
