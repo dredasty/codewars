@@ -1,0 +1,68 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.i??
+out
+gen### Java template
+!*.ico
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*allure-results
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Mac
+.DS_Store
+
+# Maven
+target
+
+# Gradle
+build/
+.gradle
+gradle/tools
+
+# Eclipse
+.metadata
+.checkstyle
+.classpath
+.pmd
+.project
+.ruleset
+.settings
+.pydevproject
+bin
+test-output
+*.log.[0-9]*
+
+# Node, npm, bower
+node_modules
+bower_components
+
+# Jest
+coverage/
+
+# Vi
+*.swp
