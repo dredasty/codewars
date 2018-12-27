@@ -1,7 +1,14 @@
 package org.fresh.kata.kyu6.whicharein;
+
+import java.util.Arrays;
+
 public class WhichAreIn {
 
     public static String[] inArray(String[] array1, String[] array2) {
-        return new String[] { "arp" };
+        return Arrays.stream(array1)
+                .filter(str -> Arrays.stream(array2).anyMatch(s -> s.contains(str)))
+                .distinct()
+                .sorted()
+                .toArray(String[]::new);
     }
 }
