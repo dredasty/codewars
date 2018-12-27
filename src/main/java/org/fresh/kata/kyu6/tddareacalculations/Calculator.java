@@ -1,9 +1,13 @@
 package org.fresh.kata.kyu6.tddareacalculations;
 
-public class Calculator {
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Arrays;
 
-    public int getTotalArea(Shape... shape) {
-        return 12;
+class Calculator {
+
+    double getTotalArea(Shape... shapes) {
+        BigDecimal bd = new BigDecimal(Arrays.stream(shapes).mapToDouble(Shape::getArea).sum());
+        return bd.setScale(2, RoundingMode.HALF_UP).doubleValue();
     }
-
 }

@@ -1,5 +1,6 @@
 package org.fresh.kata.kyu6.tddareacalculations;
 
-public interface Shape {
+interface Shape {
 
+    double getArea();
 }

@@ -1,8 +1,18 @@
 package org.fresh.kata.kyu6.tddareacalculations;
 
-public class Triangle implements Shape {
+class Triangle implements Shape {
 
-    public Triangle(double triangleBase, double triangleHeight) {
-        super();
+    private double base;
+
+    private double height;
+
+    Triangle(Number base, Number height) {
+        this.base = base.doubleValue();
+        this.height = height.doubleValue();
+    }
+
+    @Override
+    public double getArea() {
+        return (this.base * this.height) / 2;
     }
 }

@@ -1,8 +1,18 @@
 package org.fresh.kata.kyu6.tddareacalculations;
 
-public class Rectangle implements Shape {
+class Rectangle implements Shape {
 
-    public Rectangle(double height, double width) {
-        super();
+    private double height;
+
+    private double width;
+
+    Rectangle(double height, double width) {
+        this.height = height;
+        this.width = width;
+    }
+
+    @Override
+    public double getArea() {
+        return height * width;
     }
 }

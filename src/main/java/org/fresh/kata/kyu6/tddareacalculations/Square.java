@@ -1,8 +1,15 @@
 package org.fresh.kata.kyu6.tddareacalculations;
 
-public class Square implements Shape {
+class Square implements Shape {
 
-    public Square(double side) {
-        super();
+    private double side;
+
+    Square(Number side) {
+        this.side = side.doubleValue();
+    }
+
+    @Override
+    public double getArea() {
+        return this.side * this.side;
     }
 }
