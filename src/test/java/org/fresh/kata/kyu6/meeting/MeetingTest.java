@@ -1,4 +1,4 @@
-package org.fresh.kyu6.meeting;
+package org.fresh.kata.kyu6.meeting;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
