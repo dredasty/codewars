@@ -1,5 +1,10 @@
 package org.fresh.leetcode.addtwonumbers;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class ListNode {
 
     private int val;
@@ -12,6 +17,12 @@ public class ListNode {
     ListNode setNext(ListNode next) {
         this.next = next;
         return this;
+    }
+
+    int value() {
+        List<String> list = getListValues();
+        Collections.reverse(list);
+        return Integer.valueOf(String.join("", list));
     }
 
     @Override
@@ -46,12 +57,18 @@ public class ListNode {
 
     @Override
     public String toString() {
+        List<String> list = getListValues();
+        return "(" + String.join(" -> ", list) + ")";
+    }
+
+    private List<String> getListValues() {
         ListNode head = this;
-        StringBuilder builder = new StringBuilder("(").append(head.val);
+        List<String> list = new ArrayList<>();
+        list.add(String.valueOf(head.val));
         while (head.next != null) {
             head = head.next;
-            builder.append(" -> ").append(head.val);
+            list.add(String.valueOf(head.val));
         }
-        return builder.append(")").toString();
+        return list;
     }
 }
