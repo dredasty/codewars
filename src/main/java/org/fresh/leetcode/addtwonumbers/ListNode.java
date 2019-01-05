@@ -1,14 +1,12 @@
 package org.fresh.leetcode.addtwonumbers;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class ListNode {
 
-    private int val;
-    private ListNode next;
+    int val;
+    ListNode next;
 
     ListNode(int x) {
         val = x;
@@ -19,11 +17,6 @@ public class ListNode {
         return this;
     }
 
-    int value() {
-        List<String> list = getListValues();
-        Collections.reverse(list);
-        return Integer.valueOf(String.join("", list));
-    }
 
     @Override
     public boolean equals(Object o) {
