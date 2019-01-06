@@ -27,8 +27,9 @@ class Solution {
             sum /= 10;
         }
 
-        if (sum == 1)
+        if (sum == 1) {
             current.next = new ListNode(1);
+        }
 
         return newHead.next;
     }
