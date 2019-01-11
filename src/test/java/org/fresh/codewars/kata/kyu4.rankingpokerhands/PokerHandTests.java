@@ -11,6 +11,7 @@ public class PokerHandTests {
 
     @Test
     public void PokerHandRankingTest() {
+        Test("Pair wins highest card", win, "KC 4H KS 2H 8D", "QH 8H KD JH 8S");
         Test("Highest straight flush wins", loss, "2H 3H 4H 5H 6H", "KS AS TS QS JS");
         Test("Straight flush wins of 4 of a kind", win, "2H 3H 4H 5H 6H", "AS AD AC AH JD");
         Test("Highest 4 of a kind wins", win, "AS AH 2H AD AC", "JS JD JC JH 3D");
