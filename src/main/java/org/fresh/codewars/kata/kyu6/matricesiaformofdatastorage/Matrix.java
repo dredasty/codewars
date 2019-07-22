@@ -14,6 +14,7 @@ public class Matrix<E> {
         matrix = new Object[rows][cols];
     }
 
+    @SuppressWarnings("unchecked")
     public E get(int i, int j) {
         return (E) matrix[i - 1][j - 1];
     }
@@ -22,7 +23,8 @@ public class Matrix<E> {
         matrix[i - 1][j - 1] = value;
     }
 
-    public void setRow(int i, E... values) {
+    @SafeVarargs
+    public final void setRow(int i, E... values) {
         matrix[i - 1] = Arrays.copyOf(values, values.length);
     }
 

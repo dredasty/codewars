@@ -16,6 +16,11 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
 
     compile 'org.apache.commons:commons-lang3:3.8.1'
+
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+
+    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.26'
 }
 
 allprojects {
