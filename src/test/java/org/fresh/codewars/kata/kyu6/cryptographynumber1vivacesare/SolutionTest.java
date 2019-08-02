@@ -1,8 +1,9 @@
 package org.fresh.codewars.kata.kyu6.cryptographynumber1vivacesare;
 
 
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SolutionTest {
     @Test

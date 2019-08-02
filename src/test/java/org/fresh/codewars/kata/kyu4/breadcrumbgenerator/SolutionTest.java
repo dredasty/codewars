@@ -3,8 +3,6 @@ package org.fresh.codewars.kata.kyu4.breadcrumbgenerator;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SolutionTest {
@@ -22,7 +20,7 @@ public class SolutionTest {
                 "https://www.agcpartners.co.uk",
                 "www.google.com/pictures/kamehameha-kamehameha-surfer/funny"};
 
-        String[] seps = new String[]{" : ", " / ", " * ", " > ", " + ", " - ", " ; ", " >>> ", " ; " };
+        String[] seps = new String[]{" : ", " / ", " * ", " > ", " + ", " - ", " ; ", " >>> ", " ; "};
 
         String[] anss = new String[]{"<a href=\"/\">HOME</a> : <a href=\"/pictures/\">PICTURES</a> : <span class=\"active\">HOLIDAYS</span>",
                 "<a href=\"/\">HOME</a> / <a href=\"/users/\">USERS</a> / <span class=\"active\">GIACOMOSORBI</span>",

@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class Solution {
     public boolean containsDuplicate(int[] nums) {
-        HashSet set = new HashSet<>(nums.length);
+        HashSet<Integer> set = new HashSet<>(nums.length);
         for (int number : nums) {
             if (set.contains(number)) {
                 return true;

@@ -1,9 +1,6 @@
 package org.fresh.patterns.chapter2;
 
 import lombok.extern.java.Log;
-import lombok.extern.slf4j.Slf4j;
-
-import java.util.logging.Level;
 
 @Log
 public class CurrentConditionsDisplay implements Observer, DisplayElement {

@@ -1,8 +1,8 @@
 package org.fresh.codewars.kata.kyu6.meeting;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MeetingTest {
 

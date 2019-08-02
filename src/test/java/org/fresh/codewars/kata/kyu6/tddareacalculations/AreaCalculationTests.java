@@ -1,15 +1,14 @@
 package org.fresh.codewars.kata.kyu6.tddareacalculations;
 
-import static  org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-public class AreaCalculationTests
-{
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class AreaCalculationTests {
     private Calculator sut = new Calculator();
 
     @Test
-    public void areaOfATriangleIsBaseMultipliedByHeight()
-    {
+    public void areaOfATriangleIsBaseMultipliedByHeight() {
         double triangleBase = 6;
         double triangleHeight = 4;
 
@@ -17,16 +16,14 @@ public class AreaCalculationTests
     }
 
     @Test
-    public void areaOfASquareIsSquareOfSide()
-    {
+    public void areaOfASquareIsSquareOfSide() {
         double side = 6;
 
         assertEquals(36, sut.getTotalArea(new Square(side)), .0001);
     }
 
     @Test
-    public void areaOfARectangleIsWidthMultipliedByHeight()
-    {
+    public void areaOfARectangleIsWidthMultipliedByHeight() {
         double height = 4;
         double width = 8;
 
@@ -34,28 +31,24 @@ public class AreaCalculationTests
     }
 
     @Test
-    public void areaOfACircleIsSquareOfRadiusMulitpliedByPi()
-    {
+    public void areaOfACircleIsSquareOfRadiusMulitpliedByPi() {
         double radius = 3;
 
         assertEquals(28.27, sut.getTotalArea(new Circle(radius)), .0001);
     }
 
     @Test
-    public void totalAreaIsSumOfAreasOfDifferentShapes()
-    {
+    public void totalAreaIsSumOfAreasOfDifferentShapes() {
         assertEquals(49.14, sut.getTotalArea(new Rectangle(4, 2), new Rectangle(3, 4), new Circle(1), new Square(1), new Triangle(10, 5)), .0001);
     }
 
     @Test
-    public void totalAreaIsRoundedTo2Decimals()
-    {
+    public void totalAreaIsRoundedTo2Decimals() {
         assertEquals(4.45, sut.getTotalArea(new Rectangle(1.112, 2), new Rectangle(1.111, 2)), .0001);
     }
 
     @Test
-    public void totalAreaIs0WhenThereAreNoShapes()
-    {
+    public void totalAreaIs0WhenThereAreNoShapes() {
         assertEquals(0, sut.getTotalArea(), .0001);
     }
 }

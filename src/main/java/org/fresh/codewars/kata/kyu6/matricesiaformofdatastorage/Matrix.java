@@ -1,6 +1,6 @@
 package org.fresh.codewars.kata.kyu6.matricesiaformofdatastorage;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class Matrix<E> {
 
