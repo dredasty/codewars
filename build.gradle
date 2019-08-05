@@ -17,7 +17,11 @@ dependencies {
     testCompile group: 'org.assertj', name: 'assertj-core', version: '3.13.1'
     testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.26'
 
+    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.12.2'
+    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.26'
+
     compile 'org.apache.commons:commons-lang3:3.8.1'
+//    compile group: 'com.google.guava', name: 'guava', version: '28.0-jre'
 
     compileOnly 'org.projectlombok:lombok:1.18.8'
     annotationProcessor 'org.projectlombok:lombok:1.18.8'
