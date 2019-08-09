@@ -10,6 +10,10 @@ public class Solution {
         if (nums == null || nums.length == 0) {
             return -1;
         }
+// corner case
+        if (nums.length == 1) {
+            return nums[0] == target ? 0 : -1;
+        }
 
         int start = 0;
         int end = nums.length - 1;
@@ -31,13 +35,14 @@ public class Solution {
             }
 
             int minIndex = end;
-            int maxIndex = minIndex - 1;
+            int maxIndex = minIndex;
             int[] beforeMax = Arrays.copyOfRange(nums, 0, maxIndex);
             int[] afterMax = Arrays.copyOfRange(nums, minIndex, nums.length);
 
 
             if (beforeMax[0] <= target && target <= beforeMax[beforeMax.length - 1]) {
-                return Arrays.binarySearch(beforeMax, target);
+                int index = Arrays.binarySearch(beforeMax, target);
+                return index < 0 ? -1 : index;
             } else if (afterMax[0] <= target && target <= afterMax[afterMax.length - 1]) {
                 int index = Arrays.binarySearch(afterMax, target);
                 return index < 0 ? -1 : minIndex + index;

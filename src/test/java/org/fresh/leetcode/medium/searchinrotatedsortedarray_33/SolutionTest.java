@@ -15,8 +15,11 @@ class SolutionTest {
         assertThat(solution.search(new int[]{}, 0)).isEqualTo(-1);
         assertThat(solution.search(new int[]{1, 2}, 1)).isEqualTo(0);
         assertThat(solution.search(new int[]{2, 1}, 1)).isEqualTo(1);
+        assertThat(solution.search(new int[]{3, 1}, 3)).isEqualTo(0);
         assertThat(solution.search(new int[]{3, 4, 1}, 1)).isEqualTo(2);
+        assertThat(solution.search(new int[]{3, 5, 1}, 4)).isEqualTo(-1);
         assertThat(solution.search(new int[]{1}, 1)).isEqualTo(0);
+        assertThat(solution.search(new int[]{0}, 1)).isEqualTo(-1);
         assertThat(solution.search(new int[]{0, 1, 2, 4, 5, 6, 7}, 6)).isEqualTo(5);
         assertThat(solution.search(new int[]{0, 1, 2, 4, 5, 6, 7}, 3)).isEqualTo(-1);
         assertThat(solution.search(new int[]{4, 5, 6, 7, 0, 1, 2}, 0)).isEqualTo(4);
