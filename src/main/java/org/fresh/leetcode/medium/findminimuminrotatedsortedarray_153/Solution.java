@@ -21,7 +21,6 @@ public class Solution {
             } else {
                 start = mid;
             }
-
         }
         return nums[end];
     }

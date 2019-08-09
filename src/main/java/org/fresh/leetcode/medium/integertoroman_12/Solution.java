@@ -3,7 +3,7 @@ package org.fresh.leetcode.medium.integertoroman_12;
 public class Solution {
 
     public String intToRoman(int number) {
-        String roman = "";
+        StringBuilder roman = new StringBuilder();
         for (int i = 3; i >= 0; i--) {
             int pow = Double.valueOf(Math.pow(10, i)).intValue();
 
@@ -13,23 +13,23 @@ public class Solution {
                 number = reminder;
 
                 if (count == 4) {
-                    roman += getRoman(pow);
-                    roman += getRoman(5 * pow);
+                    roman.append(getRoman(pow));
+                    roman.append(getRoman(5 * pow));
                 } else if (count == 9) {
-                    roman += getRoman(pow);
-                    roman += getRoman(10 * pow);
+                    roman.append(getRoman(pow));
+                    roman.append(getRoman(10 * pow));
                 } else {
                     if (count >= 5) {
-                        roman += getRoman(5 * pow);
+                        roman.append(getRoman(5 * pow));
                         count -= 5;
                     }
                     for (int j = 0; j < count; j++) {
-                        roman += getRoman(pow);
+                        roman.append(getRoman(pow));
                     }
                 }
             }
         }
-        return roman;
+        return roman.toString();
     }
 
     private char getRoman(Number number) {
