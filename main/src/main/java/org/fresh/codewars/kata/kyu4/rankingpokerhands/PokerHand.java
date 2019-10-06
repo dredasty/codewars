@@ -38,11 +38,11 @@ public class PokerHand {
 
     private List<Card> hand;
 
-    PokerHand(String hand) {
+    public PokerHand(String hand) {
         this.hand = parseHand(hand);
     }
 
-    Result compareWith(PokerHand hand) {
+    public Result compareWith(PokerHand hand) {
         if (this.calculateHandValue(this.hand).getValue() > hand.calculateHandValue(hand.hand).getValue()) {
             return Result.WIN;
         } else if (this.calculateHandValue(this.hand).getValue() < hand.calculateHandValue(hand.hand).getValue()) {

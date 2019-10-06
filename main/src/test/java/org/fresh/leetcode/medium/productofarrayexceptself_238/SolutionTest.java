@@ -1,5 +1,6 @@
 package org.fresh.leetcode.medium.productofarrayexceptself_238;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -7,6 +8,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * https://leetcode.com/problems/product-of-array-except-self/
  */
+@Disabled
 public class SolutionTest {
     @Test
     public void testProductOfArrayExceptSelf() {

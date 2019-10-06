@@ -1,2 +1,5 @@
 rootProject.name = 'training'
+include 'annotation'
+include 'processor'
+include 'main'
 

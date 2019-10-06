@@ -1,10 +1,12 @@
 package org.fresh.codewars.kata.kyu6.cryptographynumber1vivacesare;
 
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@Disabled
 public class SolutionTest {
     @Test
     public void encodeBasicTest() {

@@ -1,30 +1,34 @@
-plugins {
-    id 'java'
-}
+subprojects {
+    apply plugin: 'java'
+    group 'org.fresh'
+    version '1.0-SNAPSHOT'
 
-group 'org.fresh'
-version '1.0-SNAPSHOT'
+    sourceCompatibility = JavaVersion.VERSION_12
 
-sourceCompatibility = JavaVersion.VERSION_11
+    repositories {
+        mavenCentral()
+    }
 
-repositories {
-    mavenCentral()
-}
+    dependencies {
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+        testCompile 'org.junit.platform:junit-platform-launcher:1.5.1'
+        compile 'org.junit.platform:junit-platform-reporting:1.5.1'
 
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
-    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.13.1'
-    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.26'
+        testCompile 'org.assertj:assertj-core:3.13.1'
 
-    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.12.2'
-    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.26'
+        compile "org.slf4j:jcl-over-slf4j:1.7.26"
 
-    compile 'org.apache.commons:commons-lang3:3.8.1'
-//    compile group: 'com.google.guava', name: 'guava', version: '28.0-jre'
+        compile 'org.apache.commons:commons-lang3:3.8.1'
+        compile 'com.google.guava:guava:28.0-jre'
 
-    compileOnly 'org.projectlombok:lombok:1.18.8'
-    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+        compileOnly 'org.projectlombok:lombok:1.18.8'
+        annotationProcessor 'org.projectlombok:lombok:1.18.8'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
 }
 
 allprojects {
@@ -34,3 +38,4 @@ allprojects {
         }
     }
 }
+

@@ -22,7 +22,6 @@ public class SolutionTest {
         };
 
         solution.gameOfLife(input);
-
-        Assertions.assertArrayEquals(output, solution.gameOfLifeTest(input));
+        Assertions.assertArrayEquals(output, input);
     }
 }

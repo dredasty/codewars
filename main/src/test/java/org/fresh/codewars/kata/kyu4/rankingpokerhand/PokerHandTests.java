@@ -1,5 +1,6 @@
-package org.fresh.codewars.kata.kyu4.rankingpokerhands;
+package org.fresh.codewars.kata.kyu4.rankingpokerhand;
 
+import org.fresh.codewars.kata.kyu4.rankingpokerhands.PokerHand;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
