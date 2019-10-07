@@ -23,7 +23,9 @@ public class Graph {
     }
 
     private void validateVertex(String v) {
-        if (!hasVertex(v)) throw new IllegalArgumentException(v + " is not a vertex");
+        if (!hasVertex(v)) {
+            throw new IllegalArgumentException(v + " is not a vertex");
+        }
     }
 
     public int degree(String v) {
@@ -32,15 +34,23 @@ public class Graph {
     }
 
     public void addEdge(String v, String w) {
-        if (!hasVertex(v)) addVertex(v);
-        if (!hasVertex(w)) addVertex(w);
-        if (!hasEdge(v, w)) E++;
+        if (!hasVertex(v)) {
+            addVertex(v);
+        }
+        if (!hasVertex(w)) {
+            addVertex(w);
+        }
+        if (!hasEdge(v, w)) {
+            E++;
+        }
         map.get(v).add(w);
         map.get(w).add(v);
     }
 
     public void addVertex(String v) {
-        if (!hasVertex(v)) map.put(v, new HashSet<>());
+        if (!hasVertex(v)) {
+            map.put(v, new HashSet<>());
+        }
     }
 
     public Iterable<String> vertices() {

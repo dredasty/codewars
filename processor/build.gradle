@@ -1,0 +1,7 @@
+dependencies {
+    compile project(":annotation")
+
+    compile group: 'com.google.auto.service', name: 'auto-service', version: '1.0-rc6'
+    compile group: 'com.squareup', name: 'javapoet', version: '1.11.1'
+    compile group: 'com.squareup', name: 'javawriter', version: '2.2.1'
+}
