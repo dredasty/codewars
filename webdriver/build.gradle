@@ -1,0 +1,10 @@
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.1.9.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-test-autoconfigure', version: '2.1.9.RELEASE'
+
+    compile 'com.codeborne:selenide:5.2.8'
+//    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+
+    compile 'io.github.bonigarcia:webdrivermanager:3.6.2'
+    compile 'io.github.bonigarcia:selenium-jupiter:3.3.0'
+}
