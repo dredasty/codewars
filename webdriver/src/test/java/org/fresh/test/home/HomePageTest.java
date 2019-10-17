@@ -17,6 +17,6 @@ public class HomePageTest extends WebDriverTestCase {
 
     @Test
     public void test() {
-        HomePage accountPage = site.openHomePage();
+//        HomePage accountPage = site.openHomePage();
     }
 }

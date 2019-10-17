@@ -1,6 +1,6 @@
 rootProject.name = 'training'
 include 'annotation'
-include 'processor'
+//include 'processor'
 include 'main-training'
 include 'webdriver'
 
