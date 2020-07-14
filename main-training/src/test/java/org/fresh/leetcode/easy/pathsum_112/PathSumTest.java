@@ -3,6 +3,9 @@ package org.fresh.leetcode.easy.pathsum_112;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+/**
+ * https://leetcode.com/problems/path-sum/
+ */
 public class PathSumTest {
     @Test
     public void testPathSum() {
