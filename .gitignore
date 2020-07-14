@@ -43,6 +43,9 @@ target
 build/
 .gradle
 gradle/tools
+gradlew
+gradlew.bat
+gradle-wrapper.*
 
 # Eclipse
 .metadata
