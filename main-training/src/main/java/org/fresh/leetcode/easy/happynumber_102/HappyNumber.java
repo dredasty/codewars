@@ -10,7 +10,7 @@ import java.util.Set;
  */
 @Slf4j
 public class HappyNumber {
-    private Set<Integer> numbers = new HashSet();
+    private Set<Integer> numbers = new HashSet<>();
 
     public boolean isHappy(int n) {
         if (n == 1) {
