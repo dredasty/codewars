@@ -11,11 +11,11 @@ public class BalancedBinaryTreeTest {
     public void testBalancedBinaryTree() {
         BalancedBinaryTree bbt = new BalancedBinaryTree();
 
-        TreeNode notBalancedTree = new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)));
-        TreeNode balancedTree = new TreeNode(1, new TreeNode(2, new TreeNode(3, new TreeNode(4), new TreeNode(4)), new TreeNode(3)), new TreeNode(2));
+        TreeNode balancedTree = new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)));
+        TreeNode notBalancedTree = new TreeNode(1, new TreeNode(2, new TreeNode(3, new TreeNode(4), new TreeNode(4)), new TreeNode(3)), new TreeNode(2));
 
-        Assertions.assertFalse(bbt.isBalanced(null));
-        Assertions.assertFalse(bbt.isBalanced(new TreeNode()));
+        Assertions.assertTrue(bbt.isBalanced(null));
+        Assertions.assertTrue(bbt.isBalanced(new TreeNode()));
         Assertions.assertFalse(bbt.isBalanced(notBalancedTree));
         Assertions.assertTrue(bbt.isBalanced(balancedTree));
     }
