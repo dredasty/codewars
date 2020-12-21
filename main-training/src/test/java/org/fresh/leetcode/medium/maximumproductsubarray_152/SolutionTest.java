@@ -1,8 +1,8 @@
 package org.fresh.leetcode.medium.maximumproductsubarray_152;
 
-import static org.assertj.core.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * https://leetcode.com/problems/maximum-product-subarray/

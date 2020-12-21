@@ -1,11 +1,15 @@
 package org.fresh.leetcode.medium.binarytreeorderleveltraversal_102;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
+
 public class BinaryTreeLevelOrderTraversalTest {
+
+    @Disabled
     @Test
     public void testBinaryTreeLevelOrderTraversal() {
         BinaryTreeLevelOrderTraversal traversal = new BinaryTreeLevelOrderTraversal();
