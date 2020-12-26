@@ -17,6 +17,6 @@ public class CountPrimesTest {
         Assertions.assertEquals(cp.countPrimes(1), 0);
         Assertions.assertEquals(4, cp.countPrimes(10));
         Assertions.assertEquals(8, cp.countPrimes(20));
-        Assertions.assertEquals(30, cp.countPrimes(120) );
+        Assertions.assertEquals(30, cp.countPrimes(120));
     }
 }

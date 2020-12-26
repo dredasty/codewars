@@ -1,9 +1,10 @@
 package org.fresh.leetcode.medium.threesum;
 
-import static org.assertj.core.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * https://leetcode.com/problems/3sum/

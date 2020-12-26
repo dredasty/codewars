@@ -12,6 +12,6 @@ import org.springframework.test.context.support.DependencyInjectionTestExecution
 @ContextConfiguration(classes = WebDriverTestCaseContext.class)
 @TestExecutionListeners({WebDriverTestExecutionListener.class,
         DependencyInjectionTestExecutionListener.class})
-@ComponentScan(basePackages = { "org.fresh" })
+@ComponentScan(basePackages = {"org.fresh"})
 public abstract class WebDriverTestCase {
 }

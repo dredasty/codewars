@@ -13,7 +13,7 @@ public class PathSumTest {
 
         Assertions.assertFalse(ps.hasPathSum(null, 0));
         Assertions.assertFalse(ps.hasPathSum(new TreeNode(1), 0));
-        Assertions.assertTrue(ps.hasPathSum(new TreeNode(), 0));;
+        Assertions.assertTrue(ps.hasPathSum(new TreeNode(), 0));
         Assertions.assertTrue(ps.hasPathSum(new TreeNode(0), 0));
         Assertions.assertTrue(ps.hasPathSum(new TreeNode(1), 1));
 

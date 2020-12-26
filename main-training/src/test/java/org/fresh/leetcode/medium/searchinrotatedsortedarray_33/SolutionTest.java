@@ -2,7 +2,7 @@ package org.fresh.leetcode.medium.searchinrotatedsortedarray_33;
 
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  *
