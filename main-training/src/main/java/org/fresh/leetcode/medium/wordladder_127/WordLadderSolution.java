@@ -62,12 +62,12 @@ public class WordLadderSolution {
         private L left;
         private R right;
 
-        private  Pair(L l, R r) {
+        private Pair(L l, R r) {
             left = l;
             right = r;
         }
 
-        public static <L,R> Pair<L, R> of(L key, R value) {
+        public static <L, R> Pair<L, R> of(L key, R value) {
             return new Pair<>(key, value);
         }
 
@@ -78,4 +78,5 @@ public class WordLadderSolution {
         public R getValue() {
             return right;
         }
-    }}
+    }
+}
