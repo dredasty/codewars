@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 public class MyLinkedListSolutionTest {
     @Test
     public void testMyLinkedList() {
+
         MyLinkedList myLinkedList = new MyLinkedList();
         Assertions.assertThat(myLinkedList.get(0)).isEqualTo(-1);
         Assertions.assertThat(myLinkedList.get(100)).isEqualTo(-1);
@@ -25,12 +26,25 @@ public class MyLinkedListSolutionTest {
         Assertions.assertThat(myLinkedList.get(0)).isEqualTo(1);
         Assertions.assertThat(myLinkedList.get(1)).isEqualTo(2);
         Assertions.assertThat(myLinkedList.get(2)).isEqualTo(3);
-        Assertions.assertThat(myLinkedList.get(2)).isEqualTo(-1);
         Assertions.assertThat(myLinkedList.get(100)).isEqualTo(-1);
 
         myLinkedList.deleteAtIndex(1);    // now the linked list is 1->3
 
         Assertions.assertThat(myLinkedList.get(0)).isEqualTo(1);
         Assertions.assertThat(myLinkedList.get(1)).isEqualTo(3);
+    }
+
+    @Test
+    public void testMyLinkedListAdding() {
+        MyLinkedList myLinkedList = new MyLinkedList();
+        myLinkedList.addAtHead(3);
+        Assertions.assertThat(myLinkedList.get(0)).isEqualTo(3);
+        myLinkedList.addAtHead(2);
+        Assertions.assertThat(myLinkedList.get(0)).isEqualTo(2);
+        myLinkedList.addAtHead(1);
+
+        Assertions.assertThat(myLinkedList.get(0)).isEqualTo(1);
+        Assertions.assertThat(myLinkedList.get(1)).isEqualTo(2);
+        Assertions.assertThat(myLinkedList.get(2)).isEqualTo(3);
     }
 }
