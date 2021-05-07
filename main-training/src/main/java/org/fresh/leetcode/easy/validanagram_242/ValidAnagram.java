@@ -14,7 +14,7 @@ public class ValidAnagram {
 
         for (int i = 0; i < s.length(); i++) {
             String subs = s.substring(i, i + 1);
-            if (t.indexOf(subs) == -1) {
+            if (!t.contains(subs)) {
                 return false;
             }
             t = t.replaceFirst(subs, "");

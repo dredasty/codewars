@@ -1,4 +1,4 @@
-package org.fresh.leetcode.medium.threesum;
+package org.fresh.leetcode.medium.threesum_15;
 
 import java.util.*;
 
@@ -20,6 +20,9 @@ public class Solution {
         }
         for (int i = 0; i < nums.length; i++) {
             int one = nums[i];
+            if (one > 0) {
+                continue;
+            }
             for (int j = i + 1; j < nums.length; j++) {
                 int two = nums[j];
                 int three = 0 - one - two;
