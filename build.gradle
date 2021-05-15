@@ -27,6 +27,8 @@ subprojects {
         compile 'org.apache.commons:commons-lang3:3.10'
         compile 'com.google.guava:guava:29.0-jre'
 
+        implementation group: 'org.jgrapht', name: 'jgrapht-core', version: '1.5.1'
+
         compileOnly 'org.projectlombok:lombok:1.18.12'
         annotationProcessor 'org.projectlombok:lombok:1.18.12'
 
