@@ -1,4 +1,4 @@
-package org.fresh.leetcode.medium.threesum;
+package org.fresh.leetcode.medium.threesum_15;
 
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 public class SolutionTest {
     @Test
-    public void testSolutionthreeSum() {
+    public void testSolutionThreeSum() {
         Solution solution = new Solution();
 
         assertThat(solution.threeSum(null)).isEmpty();

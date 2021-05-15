@@ -14,11 +14,12 @@ class Solution {
 
         for (int i = 0; i < nums.length; i++) {
             int two = target - nums[i];
-            if (table.get(two) != null) {
-                if (table.get(two) == i) {
+            final Integer second = table.get(two);
+            if (second != null) {
+                if (second == i) {
                     continue;
                 }
-                return new int[]{i, table.get(two)};
+                return new int[]{i, second};
             }
         }
         return new int[]{0, 0};
