@@ -12,30 +12,26 @@ public class FraudulentActivityNotifications {
 
     public static int activityNotifications(List<Integer> expenditure, int d) {
         int notices = 0;
+        int[] subArray = new int[d];
 
         for (int i = d; i < expenditure.size(); i++) {
-            int[] subArray = getSubArray(expenditure, i - 1, d);
-            double median = getMedian(subArray, d);
-            if (expenditure.get(i) >= median * 2) {
-                notices++;
+            for (int j = 0; j < d; j++) {
+                subArray[j] = expenditure.get(i - j - 1);
+            }
+
+            Arrays.sort(subArray);
+
+            if (d % 2 == 1) {
+                if (expenditure.get(i) >= subArray[(d + 1) / 2 - 1] * 2) {
+                    notices++;
+                }
+            } else {
+                if (expenditure.get(i) >= (subArray[d / 2 - 1] + subArray[d / 2])) {
+                    notices++;
+                }
             }
         }
 
         return notices;
-    }
-
-    private static int[] getSubArray(List<Integer> array, int current, int numberBackward) {
-        int[] subArray = new int[numberBackward];
-        for (int i = 0; i < numberBackward; i++) {
-            subArray[i] = array.get(current - i);
-        }
-        return subArray;
-    }
-
-    private static double getMedian(int[] array, int number) {
-        Arrays.sort(array);
-        return number % 2 == 1
-                ? array[(number + 1) / 2 - 1]
-                : (array[number / 2 - 1] + array[number / 2]) / 2d;
     }
 }
