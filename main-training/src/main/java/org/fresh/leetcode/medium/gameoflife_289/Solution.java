@@ -16,9 +16,7 @@ class Solution {
         int[][] result = gameOfLifeTest(board);
 
         for (int row = 0; row < rows; row++) {
-            for (int col = 0; col < cols; col++) {
-                board[row][col] = result[row][col];
-            }
+            System.arraycopy(result[row], 0, board[row], 0, cols);
         }
 
     }

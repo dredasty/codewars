@@ -1,5 +1,6 @@
 package org.fresh.leetcode.medium.maximumsubarray_53;
 
+import org.fresh.leetcode.easy.maximumsubarray_53.Solution;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

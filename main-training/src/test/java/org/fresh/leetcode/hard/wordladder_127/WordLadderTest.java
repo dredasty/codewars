@@ -1,4 +1,4 @@
-package org.fresh.leetcode.medium.wordladder_127;
+package org.fresh.leetcode.hard.wordladder_127;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

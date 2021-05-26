@@ -1,8 +1,6 @@
 package org.fresh.hakerrank;
 
 
-import java.util.stream.Stream;
-
 public class Binary {
 
     public static void main(String[] args) {

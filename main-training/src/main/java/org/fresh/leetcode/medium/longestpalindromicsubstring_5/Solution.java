@@ -1,5 +1,8 @@
 package org.fresh.leetcode.medium.longestpalindromicsubstring_5;
 
+/**
+ * https://leetcode.com/problems/longest-palindromic-substring/
+ */
 public class Solution {
     public static String longestPalindrome(String s) {
         String result = "";

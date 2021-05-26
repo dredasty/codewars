@@ -1,8 +1,9 @@
-package org.fresh.leetcode.medium.wordladder_127;
+package org.fresh.leetcode.hard.wordladder_127;
 
 import java.util.*;
 
 /**
+ * Need to check
  * https://leetcode.com/problems/word-ladder/
  */
 public class WordLadderSolution {

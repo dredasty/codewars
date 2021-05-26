@@ -3,7 +3,10 @@ package org.fresh.interview.booking;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collector;
 import java.util.stream.Stream;
 
@@ -13,6 +16,7 @@ public class WebSiteVisit {
     @SneakyThrows
     public String analyze(String pattern) {
         VisitLog[] log = new ObjectMapper().readValue(pattern, VisitLog[].class);
+
         Map<String, List<Character>> visits = new HashMap<>();
 
         for (VisitLog v : log) {

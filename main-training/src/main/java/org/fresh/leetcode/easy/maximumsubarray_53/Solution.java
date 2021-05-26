@@ -1,4 +1,4 @@
-package org.fresh.leetcode.medium.maximumsubarray_53;
+package org.fresh.leetcode.easy.maximumsubarray_53;
 
 /**
  * https://leetcode.com/problems/maximum-subarray/

@@ -2,6 +2,9 @@ package org.fresh.leetcode.medium.groupanagrams_49;
 
 import java.util.*;
 
+/**
+ * https://leetcode.com/problems/group-anagrams/
+ */
 public class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
         if (strs == null || strs.length == 0) {

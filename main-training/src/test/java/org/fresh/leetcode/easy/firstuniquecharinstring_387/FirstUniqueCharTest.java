@@ -15,6 +15,6 @@ public class FirstUniqueCharTest {
         Assertions.assertEquals(-1, fuc.firstUniqueChar("lovelove"));
         Assertions.assertEquals(0, fuc.firstUniqueChar("leetcode"));
         Assertions.assertEquals(2, fuc.firstUniqueChar("loveleetcode"));
-        Assertions.assertEquals(8, fuc.firstUniqueChar("dddccdbba"));
+        Assertions.assertEquals(8, fuc.firstUniqueCharMap("dddccdbba"));
     }
 }

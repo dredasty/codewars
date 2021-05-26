@@ -8,7 +8,6 @@ import java.util.List;
  */
 class Solution {
     public int lengthOfLongestSubstring(String s) {
-        List<Character> chars = new ArrayList<>();
         int max = 0;
         for (int i = 0; i < s.length(); i++) {
             String substring = s.substring(i);
